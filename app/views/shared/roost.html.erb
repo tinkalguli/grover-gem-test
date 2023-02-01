@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        font-family: "Lato", sans-serif;
+        -webkit-print-color-adjust: exact;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .content {
+        background-color: #ffffff;
+        padding: 32pt 32pt 32pt 32pt;
+        border-left: 32pt solid #0b5cff;
+      }
+
+      .heading-1 {
+        margin-bottom: 12px;
+        font-size: 13pt;
+        background-color: #e5eeff;
+        border-bottom: 3px solid #0b5cff;
+        padding: 4px 16px;
+      }
+
+      .heading-2 {
+        margin-bottom: 12px;
+        font-size: 11pt;
+      }
+
+      p {
+        margin-bottom: 8pt;
+        font-size: 11pt;
+      }
+
+      ul {
+        margin-bottom: 16px;
+      }
+
+      .bulleted li {
+        list-style-position: inside;
+      }
+
+      .d-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+
+      .justify-between {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+
+      .justify-center {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      .align-center {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+
+      .text-md-blue {
+        color: #0b5cff;
+      }
+
+      .font-bold {
+        font-weight: bold;
+      }
+
+      .application-no {
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        padding-bottom: 0;
+      }
+
+      .group {
+        margin-bottom: 16pt;
+      }
+
+      .reflexive {
+        padding: 8pt;
+        font-size: 10pt;
+        line-height: 14pt;
+      }
+
+      .reflexive .question {
+        width: 50%;
+        margin-right: 20pt;
+      }
+
+      .reflexive .answer {
+        width: 40%;
+        font-weight: bold;
+      }
+
+      .reflexive:nth-of-type(even) {
+        background: #f8f8f8;
+        border-top: 1pt solid #dedede;
+        border-bottom: 1pt solid #dedede;
+      }
+
+      .nested-group {
+        height: 20pt;
+        font-size: 10pt;
+        font-weight: bold;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #dedede;
+      }
+
+      .mb-1 {
+        margin-bottom: 1pt;
+      }
+
+      .mt-16 {
+        margin-top: 16pt;
+      }
+
+      .mb-4 {
+        margin-bottom: 4pt;
+      }
+
+      .mr-4 {
+        margin-right: 4pt;
+      }
+
+      .assessment-options {
+        width: 30%;
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div>
+        <h1 class="heading-1">1. GENERAL INFORMATION</h1>
+        <div>
+          <p>
+            As of the insurance Contract In Force Date, we agree to cover the
+            Insured from against certain risks under the quaranteed coverage you
+            have selected. Specific provisions apply to each coverage to explain
+            their particularities
+          </p>
+          <p>
+            In exchange, you agree that the Premiums will be paid. The Premiums
+            must be paid on the date they are due A period of forty-five (45)
+            days is allowed for the Premium to be paid. This period is called
+            the Grace Period
+          </p>
+          <p>At the end of this period, your Contract:</p>
+          <ul class="bulleted">
+            <li>
+              is cancelled for non-payment of Premium, i.e. it terminates; or
+            </li>
+            <li>
+              is maintained in force under the specific provisions applicable to
+              the coverages.
+            </li>
+          </ul>
+          <p>
+            If your Contract terminates for non-payment of Premium, you can
+            request the reinstatement of your Contract within two (2) years
+            following the date of cancellation for non-payment of Premium.
+          </p>
+          <p>
+            When a risk for which an Insured is covered occurs, we agree to pay
+            you Pragnesh the Beneficiary the insurance amount shown in the
+            policy summary or any other amount as per the specific provisions
+            applicable to a coverage.
+          </p>
+          <p>
+            If you terminate your Contract within ten (10) days following its In
+            Force Date, we will refund the first paid Premium.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="heading-1">
+          2. Information Appearing in the Policy Summary
+        </h1>
+        <div>
+          <p>The following information can be found in the policy summary:</p>
+          <ul class="bulleted">
+            <li>Premiums;</li>
+            <li>Coverages;</li>
+            <li>Insureds;</li>
+            <li>Insurance amounts;</li>
+            <li>Beneficiaries;</li>
+            <li>Owners;</li>
+            <li>Payers;</li>
+            <li>Exclusions;</li>
+            <li>
+              Any other Contract particularities (e.g. movable hypothec details)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="heading-1">3. Your Rights</h1>
+        <div>
+          <p>As a Contract Owner, you can:</p>
+          <ul class="bulleted">
+            <li>access your Contract information;</li>
+            <li>change existing coverages;</li>
+            <li>
+              designate one or more Beneficiaries for each coverage; change the
+              Contract Owner;
+            </li>
+            <li>change the Premium payment frequency;</li>
+            <li>terminate your Contract or a coverage.</li>
+          </ul>
+
+          <p>
+            To exercise these rights, you must comply with the terms of the
+            Contract and our administrative rules. Your rights may also be
+            limited by the law governing the Contract.
+          </p>
+
+          <p>
+            If you are more than one Owner, all must sign the request submitted
+            to us.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="heading-1">4. Definitions</h1>
+        <div>
+          <h2 class="heading-2">4.1 AGE</h2>
+          <p>
+            The Insured's age at the Contract anniversary date closest to the
+            date of the event for which a request is made.
+          </p>
+
+          <h2 class="heading-2">4.2 CONTRACT</h2>
+          The following documents constitute the entire Contract:
+          <ul class="bulleted">
+            <li>Policy Summary;</li>
+            <li>General Provisions;</li>
+            <li>Specific Provisions and all documents attached thereto;</li>
+            <li>
+              Any document confirming changes made to the Contract after the
+              application was signed, such as notices of exclusion, endorsement
+              or change;
+            </li>
+            <li>Application.</li>
+          </ul>
+
+          <h2 class="heading-2">4.3 DUE PREMIUM</h2>
+          <p>
+            A Premium is due on the Contract In Force Date. Subsequent Premiums
+            are due according to the selected payment frequency, calculated from
+            the Contract In Force Date.
+          </p>
+          <ul class="bulleted">
+            <li>
+              Example: The Contract comes into force on May 5, 2018, and the
+              selected payment frequency is monthly. The Premium is therefore
+              due on May 5, 2018, and thereafter on the fifth (5th) day of each
+              month.
+            </li>
+            <li>Sample text</li>
+            <li>Sample text for layout</li>
+            <li>Text for layout purpose</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h1 style="font-size: 14pt; margin-bottom: 12pt">
+          ELIGIBILITY AND INSURABILITY QUESTIONNAIRE
+        </h1>
+
+        <div>
+          <p>
+            This section shows the questions that you were asked and answers
+            that you provided for your initial Application.
+          </p>
+
+          <div class="group">
+            <h1 class="heading-1">FINANCIAL</h1>
+            <div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">Where do you live?</div>
+                  <div class="answer">1903 Queen Street East Toronto ON CA</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Please estimate your annual income (before taxes)
+                  </div>
+                  <div class="answer">1000000</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Excluding policies through work, do you have any existing
+                    life insurance policies?
+                  </div>
+                  <div class="answer">No</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Do you plan on replacing any of your existing policies?
+                  </div>
+                  <div class="answer">No</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Have you applied for any other life insurance policy that
+                    has not yet been issued?
+                  </div>
+                  <div class="answer">No</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Do you intend on keeping any of the pending coverage if
+                    you’re approved by PolicyMe?
+                  </div>
+                  <div class="answer">No</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group">
+            <h1 class="heading-1">NON MEDICAL</h1>
+            <div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Have you ever been convicted of a criminal offence or do you
+                    have any criminal charges pending (excluding offences
+                    associated with driving under the influence [DUl])?
+                  </div>
+                  <div class="answer">Yes</div>
+                </div>
+              </div>
+              <div class="nested-group">CRIMINAL HISTORY</div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Are you currently on probation or parole?
+                  </div>
+                  <div class="answer">No</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Do you have pending criminal charges?
+                  </div>
+                  <div class="answer">No</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    When did the most recent crime take place?
+                  </div>
+                  <div class="answer">October 2020</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    What type of crime have you been accused of:
+                  </div>
+                  <div class="answer">
+                    <p class="mb-1">Your answer:</p>
+                    <p class="mb-1">Simple assault</p>
+                    <p class="mb-1">Cyber bullying</p>
+                  </div>
+                </div>
+                <div class="mt-16">
+                  <div class="font-bold mb-4">Available options were</div>
+                  <div class="assessment-options-grid d-flex justify-between">
+                    <ul class="assessment-options">
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Fraud</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>
+                            This is an example of a long text displayed as
+                            option
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Disorderly conduct</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Disturbing the peace</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>
+                            This is an example of a long text displayed as
+                            option
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="assessment-options">
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Drunk and disorderly</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Harassment</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Simple assault</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Cyber bullying</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Public intoxication</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="assessment-options">
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Shoplifting</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Vandalism</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>
+                            This is an example of a long text displayed as
+                            option
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Petty theft</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Other</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    In the last twelve (12) months, have you applied for life
+                    insurance where your application has been declined, rated,
+                    postponed or modified?
+                  </div>
+                  <div class="answer">Yes</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">What was the reason?</div>
+                  <div class="answer">
+                    <p class="mb-1">Your answer:</p>
+                    <p class="mb-1">
+                      Medical including alcohol or drug use/abuse
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-16">
+                  <div class="font-bold mb-4">Available options were</div>
+                  <div class="assessment-options-grid d-flex justify-between">
+                    <ul class="assessment-options">
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Medical including alcohol or drug use/abuse</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Occupational</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Avocational/hazardous sport</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="assessment-options">
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Driving record</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Criminal activity</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="assessment-options">
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>Travel</div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="mr-4">-</div>
+                          <div>I don’t know</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">Please provide the reason:</div>
+                  <div class="answer">Diabetes type 1</div>
+                </div>
+              </div>
+              <div class="nested-group">DIABETES TYPE 1</div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    How old were you when your condition was diagnosed?
+                  </div>
+                  <div class="answer">35 years</div>
+                </div>
+              </div>
+              <div class="reflexive">
+                <div class="d-flex">
+                  <div class="question">
+                    Have you been admitted to hospital for this condition within
+                    the last five (5) years?
+                  </div>
+                  <div class="answer">Yes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
